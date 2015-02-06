@@ -22,12 +22,11 @@ load NN.mat      % Weights
 % end
 % end
 
-layer1 = (finalW1L1*testData(:,x))+finalB1L1(x);
+layer1 = (finalW1L1*testData(:,x))+finalB1L1;
 
-layer2 = (finalW1L2*layer1) + finalB1L2(x);
+layer2 = (finalW1L2*layer1) + finalB1L2;
 
 layer3 = (finalSoftmaxTheta*layer2);
 
 
 end
-
